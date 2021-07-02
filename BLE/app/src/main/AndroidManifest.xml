@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ble">
+    <!--    //Allows the app to connect to Bluetooth devices.-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--    //Allows the app to scan for and bond with Bluetooth devices.-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--// location permission is required for the app to get BLE scan results-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- //users on devices without BLE capabilities won’t see your app on the Google Play Store.-->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BLE">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
