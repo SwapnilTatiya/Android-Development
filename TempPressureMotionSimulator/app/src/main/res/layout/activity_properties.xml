@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".propertiesActivity"
+    android:background="@drawable/appbackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Temperature Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tempMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="ENTER TEMPERATURE MAXIMUM"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tempMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tempMax"
+            app:layout_constraintTop_toTopOf="@+id/tempMax" />
+
+    <TextView
+        android:id="@+id/tempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Temperature Minimum "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMax" />
+
+        <EditText
+            android:id="@+id/tempMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="ENTER TEMPERATURE MINIMUM"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tempMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tempMin"
+            app:layout_constraintTop_toTopOf="@+id/tempMin" />
+
+    <TextView
+        android:id="@+id/pressureMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Pressure Maximum "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMin" />
+
+        <EditText
+            android:id="@+id/pressureMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:hint="ENTER PRESSURE MAXIMUM"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pressureMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pressureMax"
+            app:layout_constraintTop_toTopOf="@+id/pressureMax" />
+
+    <TextView
+        android:id="@+id/pressureMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Pressure Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressureMax" />
+
+        <EditText
+            android:id="@+id/pressureMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:ems="10"
+            android:hint="ENTER PRESSURE MINIMUM"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pressureMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pressureMin"
+            app:layout_constraintTop_toTopOf="@+id/pressureMin" />
+
+    <TextView
+        android:id="@+id/accxMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationX Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressureMin" />
+
+        <EditText
+            android:id="@+id/accxMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:ems="10"
+
+            android:hint="ENTER ACCELERATION-X MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/accxMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accxMax"
+            app:layout_constraintTop_toTopOf="@+id/accxMax" />
+
+    <TextView
+        android:id="@+id/accxMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationX Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accxMax" />
+
+        <EditText
+            android:id="@+id/accxMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            android:hint="ENTER ACCELERATION-X MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/accxMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accxMin"
+            app:layout_constraintTop_toTopOf="@+id/accxMin" />
+
+    <TextView
+        android:id="@+id/accyMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationY Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accxMin" />
+
+        <EditText
+            android:id="@+id/accyMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:ems="10"
+            android:hint="ENTER ACCELERATION-Y MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/accyMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accyMax"
+            app:layout_constraintTop_toTopOf="@+id/accyMax" />
+
+    <TextView
+        android:id="@+id/accyMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationY Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accyMax" />
+
+        <EditText
+            android:id="@+id/accyMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            android:hint="ENTER ACCELERATION-Y MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/accyMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accyMin"
+            app:layout_constraintTop_toTopOf="@+id/accyMin" />
+
+    <TextView
+        android:id="@+id/acczMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationZ Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accyMin" />
+
+        <EditText
+            android:id="@+id/acczMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:ems="10"
+            android:hint="ENTER ACCELERATION-Z MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/acczMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/acczMax"
+            app:layout_constraintTop_toTopOf="@+id/acczMax" />
+
+    <TextView
+        android:id="@+id/acczMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="AccelerationZ Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acczMax" />
+
+        <EditText
+            android:id="@+id/acczMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            android:hint="ENTER ACCELERATION-Z MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/acczMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/acczMin"
+            app:layout_constraintTop_toTopOf="@+id/acczMin" />
+
+    <TextView
+        android:id="@+id/gyroxMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeX Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acczMin" />
+
+        <EditText
+            android:id="@+id/gyroxMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-X MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyroxMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyroxMax"
+            app:layout_constraintTop_toTopOf="@+id/gyroxMax" />
+
+
+    <TextView
+        android:id="@+id/gyroxMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeX Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroxMax" />
+
+        <EditText
+            android:id="@+id/gyroxMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-X MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyroxMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyroxMin"
+            app:layout_constraintTop_toTopOf="@+id/gyroxMin" />
+
+    <TextView
+        android:id="@+id/gyroyMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeY Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroxMin" />
+
+        <EditText
+            android:id="@+id/gyroyMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-Y MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyroyMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyroyMax"
+            app:layout_constraintTop_toTopOf="@+id/gyroyMax" />
+
+    <TextView
+        android:id="@+id/gyroyMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeY Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroyMax" />
+
+        <EditText
+            android:id="@+id/gyroyMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-Y MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyroyMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyroyMin"
+            app:layout_constraintTop_toTopOf="@+id/gyroyMin" />
+
+    <TextView
+        android:id="@+id/gyrozMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeZ Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroyMin" />
+
+        <EditText
+            android:id="@+id/gyrozMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-Z MAX"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyrozMax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyrozMax"
+            app:layout_constraintTop_toTopOf="@+id/gyrozMax" />
+
+    <TextView
+        android:id="@+id/gyrozMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GyroscopeZ Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyrozMax" />
+
+        <EditText
+            android:id="@+id/gyrozMinInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:ems="10"
+            android:hint="ENTER GYROSCOPE-Z MIN"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gyrozMin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gyrozMin"
+            app:layout_constraintTop_toTopOf="@+id/gyrozMin" />
+
+    <TextView
+        android:id="@+id/interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Interval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyrozMin" />
+
+        <EditText
+            android:id="@+id/intervalInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="107dp"
+            android:layout_marginLeft="107dp"
+            android:ems="10"
+            android:hint="ENTER INTERVAL BETWEEN EACH GENERATION"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/interval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/interval"
+            app:layout_constraintTop_toTopOf="@+id/interval" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval" />
+
+        <EditText
+            android:id="@+id/durationInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="103dp"
+            android:ems="10"
+            android:hint="ENTER TOTAL DURATION"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/duration"
+            app:layout_constraintTop_toTopOf="@+id/duration" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="258dp"
+        android:onClick="SaveClicked"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
