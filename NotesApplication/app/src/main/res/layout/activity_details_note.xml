@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsNoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbardetailsnote">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="Enter your Title here"
+            android:id="@+id/detailsnotestitle"
+            ></TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:id="@+id/detailsnotescontent"
+        android:hint="Type your note here"
+        android:layout_margin="15dp"
+        android:gravity="top|left"
+        android:layout_below="@id/toolbardetailsnote"
+        ></TextView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editnotefab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:foregroundGravity="bottom|left"
+        app:maxImageSize="40dp"
+        android:onClick="editNote"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

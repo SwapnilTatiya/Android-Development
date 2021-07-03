@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notesapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/notes"
+        android:label="Notes"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotesApplication">
+        <activity
+            android:name=".DetailsNoteActivity"
+            android:label="@string/title_activity_details_note"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" ></activity>
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity android:name=".editNoteActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".createNoteActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".notesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".SignUpActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
